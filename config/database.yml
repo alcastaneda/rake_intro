@@ -1,0 +1,11 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: username
+  password:
+
+development:
+  database: db_development
+  host: localhost
+  <<: *defaults
